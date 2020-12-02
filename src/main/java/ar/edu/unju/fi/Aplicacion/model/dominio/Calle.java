@@ -1,6 +1,9 @@
 package ar.edu.unju.fi.Aplicacion.model.dominio;
 
-public class Calle interface AplicacionWEB{
+import java.util.Date;
+
+public class Calle implements AplicacionWEB {
+
     private boolean lugarDisponible;
 
     public void cobroEstacionamiento() {
@@ -11,7 +14,12 @@ public class Calle interface AplicacionWEB{
     }
 
     void setLugarDisponible(boolean value) {
-       this.lugarDisponible = value;
+        this.lugarDisponible = value;
     }
-//agrego un comentario
+
+
+    @Override
+    public void cobroEstacionamiento(Calle calle, String patente, Date dia, Date hora) {
+
+    }
 }
